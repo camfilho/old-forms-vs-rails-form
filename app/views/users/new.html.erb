@@ -28,7 +28,7 @@
   <%= label_tag(:email, 'E-mail') %>
   <%= text_field_tag(:email) %>
   <%= label_tag(:password, 'Password') %>
-  <%= text_field_tag(:password) %>
+  <%= password_field_tag(:password) %>
   <%= submit_tag('Submit') %>
 <% end %>
 -->
@@ -36,6 +36,6 @@
 <%= form_for @user do |f| %>
 <%= f.text_field :username, placeholder: "Username" %>
 <%= f.text_field :email, placeholder: "example@example.com" %>
-<%= f.text_field :password %>
+<%= f.password_field :password %>
 <%= f.submit "Submit" %>
 <% end %>
